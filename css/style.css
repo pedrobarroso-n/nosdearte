@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 :root{
-    --header-color: #C2A586;
-    --ul-color: #E3C8AD;
-    --li-select: #b1987e;
+    --header_footer-color: #C2A586;
+    --ul-color: #FFFFFF;
+    --select: #E3C8AD;
+    --main-color: #F5F5F5;
 }
 
 *{
@@ -16,8 +19,8 @@ header{
     height: 100%;
     display: grid;
     grid-template-columns: 25% 75%;
-    grid-template-rows: 24vh;
-    background-color: var(--header-color);
+    grid-template-rows: 25vh;
+    background-color: var(--header_footer-color);
 }
 header div#logo{ 
     display: flex;
@@ -25,7 +28,7 @@ header div#logo{
     justify-content: end;
 }
 header div#logo > img{ 
-    height: 80%; 
+    height: 80%;
 }
 header nav{
     display: flex;
@@ -34,26 +37,69 @@ header nav{
 }
 header nav ul{
     width: 70%;
-    height: 30%;
+    height: 28%;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     background-color: var(--ul-color);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.28);
 }
-header nav ul > li{
-    width: 33.3%;
-    padding: 2% 0;
+header nav ul a{
+    width: 100%;
+    padding: 2% 12%;
+    text-decoration: none;
     text-align: center;
-    list-style: none;
-    font-style: italic;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
 }
-header nav ul > li:nth-child(2){
+header nav ul a:nth-child(2){
     border-right: 1px solid black;
     border-left: 1px solid black;
 }
-header nav ul > li:nth-child(1){
+header nav ul a:nth-child(1){
     border-radius: 10px 0px 0px 10px;
 }
-header nav ul > li:nth-child(3){
+header nav ul a:nth-child(3){
     border-radius: 0px 10px 10px 0px;
+}
+header nav ul a:any-link{
+    color: black;
+}
+header nav ul a li{
+    list-style: none;
+}
+
+/*============================== MAIN STYLE ================================*/
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+/*============================= FOOTER SYTE ===============================*/
+
+footer{
+    width: 100%;
+    height: 140px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    background-color: var(--header_footer-color);
+}
+footer div#descricao{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 0 20px 20px;
+}
+footer div#instagram{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer div#instagram a{
+    text-decoration: none;
+    margin: 4px 0;
 }
