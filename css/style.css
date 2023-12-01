@@ -1,0 +1,59 @@
+:root{
+    --header-color: #C2A586;
+    --ul-color: #E3C8AD;
+    --li-select: #b1987e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*=============================== HEADER STYLE =============================*/
+
+header{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 24vh;
+    background-color: var(--header-color);
+}
+header div#logo{ 
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+header div#logo > img{ 
+    height: 80%; 
+}
+header nav{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+header nav ul{
+    width: 70%;
+    height: 30%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--ul-color);
+}
+header nav ul > li{
+    width: 33.3%;
+    padding: 2% 0;
+    text-align: center;
+    list-style: none;
+    font-style: italic;
+}
+header nav ul > li:nth-child(2){
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+header nav ul > li:nth-child(1){
+    border-radius: 10px 0px 0px 10px;
+}
+header nav ul > li:nth-child(3){
+    border-radius: 0px 10px 10px 0px;
+}
