@@ -2,10 +2,11 @@
 
 :root{
     --header_footer-color: #C2A586;
-    --header_footer-font: 'Raleway', sans-serif;
+    --principal-font: 'Raleway', sans-serif;
     --ul-color: #FFFFFF;
     --select: #E3C8AD;
     --main-color: #F5F5F5;
+    --article-color: #FFFFFF;
 }
 
 *{
@@ -52,7 +53,7 @@ header nav ul a{
     text-align: center;
     cursor: pointer;
     font-size: 1em;
-    font-family: var(--header_footer-font);
+    font-family: var(--principal-font);
     transition: .4s ease;
 }
 header nav ul a:hover{
@@ -78,9 +79,80 @@ header nav ul a li{
 /*============================== MAIN STYLE ================================*/
 
 main{
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: var(--main-color);
+}
+
+/*----------SECTION SLIDES-------------*/
+
+main section#slides{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    padding: 5% 0;
+}
+main section#slides img{
+    display: block;
+    margin: 0 auto;
+}
+
+/*----------------ARTICLE--------------*/
+
+main article{
+    width: 92%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 65% 34%;
+    grid-template-rows: 78vh;
+    margin: 5% auto;
+    background-color: var(--article-color);
+}
+main article div#descricao{
+    width: 60%;
+    margin: 0 auto;
+}
+main article div#descricao h2{
+    font-size: 3.5em;
+    font-weight: 700;
+    margin: 10% 0 2% 0;
+}
+main article div#descricao h3{
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-style: italic;
+    margin-bottom: 10%;
+}
+main article div#descricao p{
+    font-family: var(--principal-font);
+    font-size: 1em;
+    font-weight: lighter;
+    line-height: 2em;
+    margin: 10% 0;
+}
+main article div#descricao span{
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0;
+}
+main article div#descricao span > a{
+    text-decoration: none;
+    margin: 1% 0 0 2%;
+    color: black;
+}
+main article div#descricao span > img{
+    height: 26px;
+}
+main article div#descricao i{
+    font-size: 1.2em;
+    font-weight: 700;
+}
+main article div:nth-child(2) img{
+    height: 100%;
+    width: 100%;
+}
+main article div:nth-child(2){
+    background-color: #C2A586;
 }
 
 /*============================= FOOTER SYTE ===============================*/
@@ -99,7 +171,7 @@ footer div#descricao{
     gap: 4px;
     padding: 0 0 20px 20px;
     font-size: 1em;
-    font-family: var(--header_footer-font);
+    font-family: var(--principal-font);
 }
 footer div#instagram{
     display: flex;
