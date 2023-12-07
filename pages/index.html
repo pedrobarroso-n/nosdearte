@@ -6,9 +6,11 @@
     <title>Nós de Arte</title>
     <link rel="shortcut icon" href="../image/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <script type="module" src="../js/script.js"></script>
     <style>ul > a:nth-child(1){ background-color: var(--select); }</style>
 </head>
-<body onload="slide_1()">
+<body>
     <header>
         <div id="logo">
             <img src="../image/logo.png" alt="Logo da Nós de Artes">
@@ -23,43 +25,24 @@
     </header>
 
     <main>
-        <section id="slides">
-            <img id="banner" alt="banners do nós de arte">
-        </section>
-        <article>
-            <div id="descricao">
-                <h2>Quem somos ?</h2>
-                <h3>Nós de Arte</h3>
-                <p>
-                    A Nós de Arte é uma rede de artesãs compostas por mulheres superpoderosas que produzem artesanato com amor, arte e dedicação. Visando a valorização do nosso artesanato.
-                </p>
-                <span>
-                    <img src="../image/instagram-icone.png" alt="icone instagram">
-                    <a href="#">veja mais no instagram</a>
-                </span>
-                <i>
-                    <i>SOMOS ARTE</i> <br> 
-                    <i>SOMOS ARTESÃS</i> <br>
-                    <i>SOMOS NÓS DE ARTE!</i>
-                </i>
-            </div>
-            <div>
-                <img src="../image/nosdearte.jpg" alt="equipe do nós de arte">
-            </div>
-        </article>
+        <div id="slides">
+            <span>
+                <img src="../image/slide_1.gif" class="banner">
+                <img src="../image/slide_2.gif" class="banner">
+                <img src="../image/slide_3.gif" class="banner">
+            </span>
+        </div>
     </main>
 
     <footer>
-        <div id="descricao">
-            <p>II Mód ADS - IFPI Pedro II</p>
-            <p>Todos os direitos reservados a Nós de Arte &copy;2023</p>
+        <div id="informes">
+            <p>I Mód ADS - IFPI Pedro II</p>
+            <p>Todos os direitos reservados Nós de Arte &copy;2023</p>
         </div>
-        <div id="instagram">
+        <div id="midias">
             <img src="../image/instagram-icon2.png" alt="icone do instagram">
             <a href="https://www.instagram.com/ctads_capedii/#" target="_blank">@ctads_capedii</a>
         </div>
     </footer>
-
-    <script src="../js/script.js"></script>
 </body>
 </html>
