@@ -6,7 +6,9 @@
     --ul-color: #FFFFFF;
     --select: #E3C8AD;
     --main-color: #F5F5F5;
+    --quem_somos-color: rgb(255, 255, 255);
     --principal-font: 'Raleway', sans-serif;
+    --font-2: 'Times New Roman', Times, serif;
 }
 
 *{
@@ -95,13 +97,13 @@ main div#slides{
     max-width: 981px;
     overflow: hidden;
     margin: 0 auto;
+    padding: 6% 0;
 }
 main div#slides span{
     display: flex;
     flex-wrap: nowrap;
     margin: 0 auto;
-    padding: 6% 0;
-    animation: slide-move 25s infinite alternate;
+    animation: slide-move 30s 5s infinite alternate;
 }
 main div#slides span > img{
     height: 100%;
@@ -112,10 +114,78 @@ main div#slides span > img{
     0%{
         transform: translateX(0);
     }
+    50%{
+        transform: translate(-68vw);
+    }
     100%{
         transform: translateX(-136vw);
     }
 }
+main section#sobre{
+    width: 90vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 64% 36%;
+    background-color: var(--quem_somos-color);
+}
+main section#sobre span{
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/nosdearte.jpg);
+    background-size: cover;
+}
+main section#sobre article{
+    width: 60%;
+    margin: auto;
+}
+main section#sobre article h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:700;
+    font-size: 3.5em;
+}
+main section#sobre article h3{
+    font-family: var(--font-2);
+    font-weight: 300;
+    font-size: 1.5em;
+    font-style: italic;
+}
+main section#sobre article p{
+    font-family: var(--principal-font);
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 30px;
+    margin-top: 12%;
+}
+main section#sobre div{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 7% 0;
+}
+main section#sobre div img{
+    height: 26px;
+}
+main section#sobre div a{
+    text-decoration: none;
+    font-family: var(--principal-font);
+    font-size: .75em;
+    font-weight: 300;
+    color: black;
+    margin: auto 0;
+}
+main section#sobre article i{
+    font-family: var(--font-2);
+    margin-top: 5%;
+    font-size: 1.3em;
+    font-style: normal;
+    line-height: 28px;
+    display: flex;
+    flex-direction: column;
+}
+main section#sobre article i b:nth-child(1){ color: #c9a177cc; }
+main section#sobre article i b:nth-child(2){ color: rgba(207, 37, 207, 0.6); }
+main section#sobre article i b:nth-child(3){ color: rgba(255, 217, 0, 0.7); }
 
 /*=============================== FOOTER STYLE ================================*/
 
