@@ -21,13 +21,12 @@
 header{
     width: 100%;
     height: 25vh;
-    max-height: 200px;
     display: flex;
     flex-direction: row;
     background-color: var(--header-color);
 }
 header div#logo{
-    width: 25vw;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -36,7 +35,7 @@ header div#logo > img{
     height: 80%;
 }
 header nav{
-    width: 75vw;
+    width: 75%;
     display: flex;
     align-items: center;
     margin-left: 10%;
@@ -49,6 +48,7 @@ header nav ul{
     border-radius: 10px;
     background-color: var(--ul-color);
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.28);
+    z-index: 2;
 }
 header nav ul a{
     width: 100%;
@@ -93,8 +93,6 @@ main{
 main div#slides{
     width: 68vw;
     height: 100%;
-    max-height: 563px;
-    max-width: 981px;
     overflow: hidden;
     margin: 0 auto;
     padding: 6% 0;
@@ -108,7 +106,6 @@ main div#slides span{
 main div#slides span > img{
     height: 100%;
     width: 68vw;
-    max-width: 981px;
 }
 @keyframes slide-move{
     0%{
@@ -124,7 +121,7 @@ main div#slides span > img{
 main section#sobre{
     width: 90vw;
     height: 80vh;
-    margin: 0 auto;
+    margin: 10% auto;
     display: grid;
     grid-template-columns: 64% 36%;
     background-color: var(--quem_somos-color);
@@ -192,7 +189,6 @@ main section#sobre article i b:nth-child(3){ color: rgba(255, 217, 0, 0.7); }
 footer{
     width: 100%;
     height: 18vh;
-    max-height: 160px;
     display: flex;
     flex-direction: row;
     background-color: var(--footer-color);

@@ -1,0 +1,64 @@
+/*================== SMALL SCREEN ==================*/
+@media screen and (max-width: 767px){
+
+    header div#logo{
+        width: 50%;
+    }
+    header nav{
+        width: 50%;
+        margin: 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header nav ul{
+        width: 40vw;
+        height: 20vh;
+        border-radius: 0px;
+        flex-direction: column;
+        justify-content: space-around;
+        position: relative;
+        top: 10vh;
+        z-index: -1;
+    }
+    header nav ul a{
+        height: 100%;
+        width: 100%;
+    }
+    header nav ul a:nth-child(1), header nav ul a:nth-child(2), header nav ul a:nth-child(3){ /*removendo estilos*/
+        border-radius: 0px;
+        border: none;
+    }
+    
+    main section#sobre{
+        grid-template-columns: 1fr;
+        grid-template-rows: 64% 36%;
+    }
+    main section#sobre article{
+        width: 90%;
+    }
+    main section#sobre article h2{
+        font-size: 2em;
+    }
+    main section#sobre article h3{
+        font-size: 1.3em;
+    }
+    main section#sobre article p{
+        font-size: .8em;
+    }
+    main section#sobre article i{
+        font-size: 1em;
+    }
+    main section#sobre div a{
+        font-size: .7em;
+    }
+
+    footer{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+    }
+    footer div#informes{
+        font-size: 0.8em;
+        text-align: center;
+    }
+}
