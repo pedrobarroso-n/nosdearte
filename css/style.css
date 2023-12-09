@@ -48,7 +48,6 @@ header nav ul{
     border-radius: 10px;
     background-color: var(--ul-color);
     box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.28);
-    z-index: 2;
 }
 header nav ul a{
     width: 100%;
@@ -89,13 +88,13 @@ main{
     height: 100%;
     background-color: var(--main-color);
 }
-/*-----For page index-----*/
+/*-----------For page index-----------*/
 main div#slides{
     width: 68vw;
     height: 100%;
     overflow: hidden;
     margin: 0 auto;
-    padding: 6% 0;
+    padding: 5% 0;
 }
 main div#slides span{
     display: flex;
@@ -121,7 +120,7 @@ main div#slides span > img{
 main section#sobre{
     width: 90vw;
     height: 80vh;
-    margin: 10% auto;
+    margin: 5% auto;
     display: grid;
     grid-template-columns: 64% 36%;
     background-color: var(--quem_somos-color);
@@ -183,6 +182,27 @@ main section#sobre article i{
 main section#sobre article i b:nth-child(1){ color: #c9a177cc; }
 main section#sobre article i b:nth-child(2){ color: rgba(207, 37, 207, 0.6); }
 main section#sobre article i b:nth-child(3){ color: rgba(255, 217, 0, 0.7); }
+
+main section#apoio{
+    width: 85vw;
+    height: 100%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+main section#apoio div{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+main section#apoio div:nth-child(even){
+    flex-direction: row-reverse;
+}
+main section#apoio div p{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+}
 
 /*=============================== FOOTER STYLE ================================*/
 
