@@ -1,5 +1,5 @@
 /*================== SMALL SCREEN ==================*/
-@media screen and (max-width: 767px){
+@media screen and (max-width: 800px){
 
     header div#logo{
         width: 50%;

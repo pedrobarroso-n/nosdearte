@@ -9,6 +9,7 @@
     --quem_somos-color: rgb(255, 255, 255);
     --principal-font: 'Raleway', sans-serif;
     --font-2: 'Times New Roman', Times, serif;
+    --font-3: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 *{
@@ -136,7 +137,7 @@ main section#sobre article{
     margin: auto;
 }
 main section#sobre article h2{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-3);
     font-weight:700;
     font-size: 3.5em;
 }
@@ -200,8 +201,17 @@ main section#apoio div:nth-child(even){
 }
 main section#apoio div p{
     width: 50%;
-    text-align: center;
     margin: 0 auto;
+    font-family: var(--principal-font);
+    line-height: 24px;
+    font-size: 1em;
+}
+main section#apoio div p b{
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 7%;
+    font-family: var(--font-3);
 }
 
 /*=============================== FOOTER STYLE ================================*/
