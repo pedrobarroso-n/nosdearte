@@ -5,8 +5,8 @@ function Menu(){
     const ul = document.querySelector('ul')
 
     const menu = document.createElement('menu')
-    menu.style.width = '36px'
-    menu.style.height = '36px'
+    menu.style.width = '34px'
+    menu.style.height = '34px'
     menu.style.position = 'relative'
     menu.style.top = '-60%'
     menu.style.background = 'url(../image/menu-icon.png)'

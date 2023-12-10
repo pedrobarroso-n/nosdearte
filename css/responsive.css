@@ -1,6 +1,10 @@
-/*================== SMALL SCREEN ==================*/
-@media screen and (max-width: 800px){
+/*==================== MOBILE SCREEN ====================*/
 
+@media screen and (max-width: 767px){
+
+    header{
+        height: 18vh;
+    }
     header div#logo{
         width: 50%;
     }
@@ -28,10 +32,19 @@
         border-radius: 0px;
         border: none;
     }
-    
+    /*-----------for page index----------*/
+    main div#slides, main div#slides span > img{
+        width: 86vw;
+    }
+    @keyframes slide-move{
+        0%{ transform: translateX(0); }
+        50%{ transform: translate(-86vw); }
+        100%{ transform: translateX(-172vw); }
+    }
     main section#sobre{
+        height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 64% 36%;
+        grid-template-rows: 1fr 1fr;
     }
     main section#sobre article{
         width: 90%;
@@ -51,6 +64,25 @@
     main section#sobre div a{
         font-size: .7em;
     }
+    main section#apoio{
+        height: 100%;
+    }
+    main section#apoio div{
+        flex-direction: column;
+        height: 70vh;
+        max-height: 500px;
+    }
+    main section#apoio div:nth-child(even){ /*remover efeitos*/
+        flex-direction: column;
+    }
+    main section#apoio div p{
+        width: 100%;
+        font-size: 0.9em;
+        line-height: normal;
+    }
+    main section#apoio div b{
+        font-size: 1.2em;
+    }
 
     footer{
         display: grid;
@@ -60,5 +92,34 @@
     footer div#informes{
         font-size: 0.8em;
         text-align: center;
+    }
+}
+
+/*========================= TABLET SCREEN ===========================*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    
+    /*----------for page index--------*/
+    main section#sobre{
+        height: 90vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    main section#apoio div{
+        height: 20vh;
+    }
+    main section#apoio div p b{
+        margin-bottom: 5%;
+    }
+    main section#apoio div p{
+        font-size: 0.9em;
+        line-height: normal;
+    }
+
+    footer{
+        height: 12vh;
+    }
+    footer div#informes{
+        width: 80%;
     }
 }
