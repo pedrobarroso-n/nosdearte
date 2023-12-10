@@ -32,6 +32,15 @@
         border-radius: 0px;
         border: none;
     }
+    header nav menu{  /*criado via js*/
+        width: 36px;
+        height: 32px;
+        background: url(../image/menu-icon.png) no-repeat center;
+        background-size: cover;
+        transition: .3s ease;
+        position: relative;
+        top: -55%;
+    }
     /*-----------for page index----------*/
     main div#slides, main div#slides span > img{
         width: 86vw;
