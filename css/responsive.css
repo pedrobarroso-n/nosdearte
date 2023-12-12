@@ -3,7 +3,7 @@
 @media screen and (max-width: 767px){
 
     header{
-        height: 15vh;
+        height: 16vh;
     }
     header div#logo{
         width: 50%;
@@ -11,19 +11,19 @@
     header nav{
         width: 50%;
         margin: 0;
-        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        flex-wrap: nowrap;
     }
     header nav ul{
-        width: 40vw;
-        height: 22vh;
+        width: 45vw;
+        height: 30vh;
         border-radius: 0px;
         flex-direction: column;
         justify-content: space-around;
         position: relative;
-        top: 10vh;
-        z-index: -1;
+        top: 20vh;
+        z-index: 1;
+        display: none;
     }
     header nav ul a{
         height: 100%;
@@ -34,22 +34,22 @@
         border: none;
     }
     header nav menu{  /*criado via js*/
-        width: 36px;
-        height: 32px;
+        width: 42px;
+        height: 36px;
         background: url(../image/menu-icon.png) no-repeat center;
         background-size: cover;
         transition: .3s ease;
-        position: relative;
-        top: -50%;
+        position: absolute;
     }
+    
     /*-----------for page index----------*/
     main div#slides, main div#slides span > img{
         width: 90vw;
     }
     @keyframes slide-move{
         0%{ transform: translateX(0); }
-        50%{ transform: translate(-86vw); }
-        100%{ transform: translateX(-172vw); }
+        50%{ transform: translate(-90vw); }
+        100%{ transform: translateX(-180vw); }
     }
     main section#sobre{
         height: 100vh;
@@ -127,7 +127,7 @@
     }
 
     footer{
-        height: 15vh;
+        height: 14vh;
     }
     footer div#informes{
         width: 80%;

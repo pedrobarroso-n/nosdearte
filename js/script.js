@@ -7,12 +7,12 @@ function Menu(){
     nav.appendChild(menu)
     
     menu.addEventListener('click', ()=> {
-        if (ul.style.zIndex != 1){
+        if (ul.style.display != 'flex'){
             menu.style.rotate = '90deg'
-            ul.style.zIndex = 1
+            ul.style.display = 'flex'
         } else{
             menu.style.rotate = '0deg'
-            ul.style.zIndex = -1
+            ul.style.display = 'none'
         }
     })
 }
