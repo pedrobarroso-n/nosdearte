@@ -214,6 +214,68 @@ main section#apoio div p b{
     margin-bottom: 10%;
     font-family: var(--font-3);
 }
+/*----------For page contato----------*/
+main#pageContato{
+    width: 75vw;
+    height: 90vh;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    background-color: transparent;
+}
+main#pageContato > div#contato, main#pageContato > figure{
+    width: 50%;
+    height: 100%;
+}
+main#pageContato div#contato > div{
+    width: 90%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 242, 183);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+main#pageContato div#contato > div h2{
+    margin-bottom: 6%;
+    font-family: var(--principal-font);
+    font-weight: 400;
+    font-size: 1.7em;
+}
+main#pageContato div#contato > div span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3%;
+}
+main#pageContato div#contato > div span a{
+    color: black;
+    margin-left: 8px;
+    text-decoration: none;
+    font-family: var(--font-3);
+    font-size: 1.4em;
+}
+main#pageContato div#contato > div span i{
+    width: 24px;
+    height: 24px;
+    background-image: url(../image/whatsapp-icon.png);
+    background-size: cover;
+}
+main#pageContato div#contato > div span:last-child i{
+    background-image: url(../image/instagram-icon2.png);
+}
+main#pageContato div#contato > iframe{
+    margin-top: 10%;
+    width: 90%;
+    height: 45%;
+}
+main#pageContato figure > img{
+    width: 95%;
+    height: 100%;
+}
 
 /*=============================== FOOTER STYLE ================================*/
 
