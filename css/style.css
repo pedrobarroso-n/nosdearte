@@ -7,6 +7,7 @@
     --select: #E3C8AD;
     --main-color: #F5F5F5;
     --quem_somos-color: rgb(255, 255, 255);
+    --mensage-color: rgb(255, 255, 255);
     --principal-font: 'Raleway', sans-serif;
     --font-2: 'Times New Roman', Times, serif;
     --font-3: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -278,24 +279,41 @@ main#pageContato figure > img{
 }
 /*------------for page produtos------------*/
 main#pageProdutos{
-    width: 95vw;
-    height: 100%;
-    margin: 0 auto;
+    padding-top: 5vh;
 }
 main#pageProdutos section#mensage{
-    width: 100%;
-    height: 45vh;
-    background-color: aqua;
+    width: 90%;
+    height: 50vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background-color: var(--mensage-color);
 }
-main#pageProdutos section#produtos{
-    width: 100%;
-    height: 60vh;
-    background-color: blue;
+main#pageProdutos section#mensage span{
+    background-image: url(../image/boneca_pano.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+main#pageProdutos section#mensage div{
+    padding: 0 12%;
+}
+main#pageProdutos section#mensage div h2{
+    font-family: var(--font-3);
+    font-size: 3.6em;
+    margin: 8% 0;
+}
+main#pageProdutos section#mensage div p{
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 28px;
 }
 main#pageProdutos section#mensage-2{
-    width: 100%;
-    height: 20vh;
-    background-color: blueviolet;
+    width: 90%;
+    height: 23vh;
+    margin: 0 auto;
+    background-image: url(../image/mensagem.png);
+    background-position: right;
 }
 
 /*=============================== FOOTER STYLE ================================*/
