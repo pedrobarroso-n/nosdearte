@@ -8,6 +8,7 @@
     --main-color: #F5F5F5;
     --box-color: rgb(255, 255, 255);
     --contatos-color:  rgb(252, 240, 188);
+    --button-color: rgb(250, 250, 58);
     --principal-font: 'Raleway', sans-serif;
     --font-2: 'Times New Roman', Times, serif;
     --font-3: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -280,7 +281,7 @@ main#pageContato figure > img{
 }
 /*------------for page produtos------------*/
 main#pageProdutos{
-    padding-top: 5vh;
+    padding: 5vh 0;
 }
 main#pageProdutos section#mensage{
     width: 90%;
@@ -308,6 +309,64 @@ main#pageProdutos section#mensage div p{
     font-style: italic;
     font-weight: 300;
     line-height: 28px;
+}
+main#pageProdutos section#produtos{
+    width: 90%;
+    height: 100%;
+    margin: 5% auto;
+    background-color: var(--box-color);
+}
+main#pageProdutos section#produtos > h2{
+    font-family: var(--principal-font);
+    font-size: 1.7em;
+    font-weight: 400;
+    padding: 2%;
+}
+main#pageProdutos section#produtos > div#local{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 10vh 0;
+    margin: 3% auto;
+    padding-bottom: 3%;
+}
+main#pageProdutos section#produtos div#local > div{ /*produtos ficam aqui*/
+    width: 250px;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--box-color);
+}
+main#pageProdutos section#produtos div#local > div > img{
+    width: 95%;
+    height: 70%;
+    margin-bottom: 5%;
+}
+main#pageProdutos section#produtos div#local > div > h3{
+    font-family: var(--principal-font);
+    font-weight: 300;
+    font-size: 0.9em;
+}
+main#pageProdutos section#produtos div#local > div > p{
+    font-family: var(--font-3);
+    font-weight: 300;
+    font-size: 1em;
+    margin: 3% 0;
+}
+main#pageProdutos section#produtos div#local > div > p::before{
+    content: 'R$ ';
+}
+main#pageProdutos section#produtos div#local > div > button{
+    background-color: var(--button-color);
+    width: 95%;
+    height: 12%;
+    color: white;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: var(--principal-font);
+    border: 1px solid transparent;
+    cursor: pointer;
 }
 main#pageProdutos section#mensage-2{
     width: 90%;

@@ -133,6 +133,14 @@
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    main#pageProdutos section#mensage div h2{
+        font-size: 3em;
+        margin: 6% 0;
+    }
+    main#pageProdutos section#produtos h2{
+        font-size: 1.4em;
+        padding: 4%;
+    }
     main#pageProdutos section#mensage-2{
         flex-direction: column;
     }
