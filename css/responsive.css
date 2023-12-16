@@ -127,6 +127,18 @@
     main#pageContato figure > img{
         border-radius: 50%;
     }
+    /*------------for page produtos-------------*/
+    main#pageProdutos section#mensage{
+        height: 60vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    main#pageProdutos section#mensage-2{
+        flex-direction: column;
+    }
+    main#pageProdutos section#mensage-2 img{
+        width: 100%;
+    }
 
     footer{
         display: grid;
