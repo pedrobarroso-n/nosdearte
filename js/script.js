@@ -69,7 +69,7 @@ const products = [
         image: '../image/tapete_circular.jpeg'
     },
     {
-        name: 'Rapete retangular',
+        name: 'Tapete retangular',
         price: '0, 00',
         image: '../image/tapete_retangular.jpeg'
     },
@@ -83,7 +83,6 @@ const products = [
 document.onload(createItens())
 
 function createItens(){
-
     const local = document.getElementById('local')
     let div = document.createElement('div')
     let image = document.createElement('img')
@@ -101,8 +100,7 @@ function createItens(){
         button.innerHTML = "Realizar compra"
         div.appendChild(button)
         local.appendChild(div)
-
-        // reinicalizando variaveis
+        // reinicalizando valores das variaveis
         div = document.createElement('div')
         image = document.createElement('img')
         name = document.createElement('h3')
@@ -110,4 +108,3 @@ function createItens(){
         button = document.createElement('button')
     }
 }
-

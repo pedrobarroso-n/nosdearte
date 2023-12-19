@@ -9,6 +9,7 @@
     --box-color: rgb(255, 255, 255);
     --contatos-color:  rgb(252, 240, 188);
     --button-color: rgb(250, 250, 58);
+    --eventos-color: rgb(255, 233, 214);
     --principal-font: 'Raleway', sans-serif;
     --font-2: 'Times New Roman', Times, serif;
     --font-3: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -29,7 +30,7 @@ header{
     background-color: var(--header-color);
 }
 header div#logo{
-    width: 25%;
+    width: 28%;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -38,13 +39,13 @@ header div#logo > img{
     height: 80%;
 }
 header nav{
-    width: 75%;
+    width: 72%;
     display: flex;
     align-items: center;
-    margin-left: 10%;
+    margin-left: 5%;
 }
 header nav ul{
-    width: 70%;
+    width: 75%;
     height: 28%;
     display: flex;
     flex-direction: row;
@@ -67,14 +68,13 @@ header nav ul a{
 header nav ul a:hover{
     background-color: var(--select);
 }
-header nav ul a:nth-child(2){  /*divisorias*/
-    border-right: 1px solid black;
+header nav ul a:not(a:first-child){  /*divisorias*/
     border-left: 1px solid black;
 }
-header nav ul a:nth-child(1){
+header nav ul a:first-child{
     border-radius: 10px 0 0 10px;
 }
-header nav ul a:nth-child(3){
+header nav ul a:last-child{
     border-radius: 0 10px 10px 0;
 }
 header nav ul a:any-link{
@@ -84,14 +84,14 @@ header nav ul a li{
     list-style: none;
 }
 
-/*================================ MAIN STYLE =================================*/
+/*============================== MAIN STYLE ALL PAGES =================================*/
 
+/*================ PAGE INDEX =================*/
 main{
     width: 100%;
     height: 100%;
     background-color: var(--main-color);
 }
-/*-----------For page index-----------*/
 main div#slides{
     width: 68vw;
     height: 100%;
@@ -110,14 +110,11 @@ main div#slides span > img{
     width: 68vw;
 }
 @keyframes slide-move{
-    0%{
-        transform: translateX(0);
+    0%{ transform: translateX(0);
     }
-    50%{
-        transform: translate(-68vw);
+    50%{ transform: translate(-68vw);
     }
-    100%{
-        transform: translateX(-136vw);
+    100%{ transform: translateX(-136vw);
     }
 }
 main section#sobre{
@@ -216,70 +213,90 @@ main section#apoio div p b{
     margin-bottom: 10%;
     font-family: var(--font-3);
 }
-/*----------For page contato----------*/
-main#pageContato{
+
+/*================ PAGE EVENTOS =================*/
+main#pageEventos{
     width: 75vw;
-    height: 90vh;
-    margin: 5% auto;
-    display: flex;
-    flex-direction: row;
-    gap: 1%;
+    margin: 0 auto;
+    padding: 10vh 0;
     background-color: transparent;
 }
-main#pageContato > div#contato, main#pageContato > figure{
-    width: 50%;
-    height: 100%;
+main#pageEventos section#disponiveis{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color);
 }
-main#pageContato div#contato > div{
+main#pageEventos section#disponiveis h1, 
+main#pageEventos section#finalizados h1{
+    height: 20%;
+    text-align: center;
+    font-family: var(--font-3);
+    font-weight: 600;
+    font-size: 3.6em;
+    background-color: var(--box-color);
+}
+main#pageEventos section#disponiveis div{
+    height: 80%;
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+main#pageEventos section#disponiveis div img{
+    height: 80%;
+    width: 100%;
+}
+main#pageEventos section#disponiveis div h2{
     width: 90%;
-    height: 45%;
+    padding: 32.8% 5%;
+    text-align: center;
+    font-family: var(--principal-font);
+    font-weight: 300;
+    font-size: 1.5em;
+    background-color: var(--box-color);
+}
+main#pageEventos section#finalizados{
+    width: 80vw;
+    width: 100%;
+    margin-top: 5%;
+}
+main#pageEventos section#finalizados div#registros{
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px 0;
+    background-color: var(--main-color);
+}
+main#pageEventos section#finalizados div#registros > div{
+    height: 100%;
+    width: 40%;
+    margin: auto;
+    padding: 16px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background-color: var(--contatos-color);
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.35);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px 0px;
+    background-color: var(--eventos-color);
 }
-main#pageContato div#contato > div h2{
-    margin-bottom: 6%;
+main#pageEventos section#finalizados div#registros > div *{ /*todos os textos*/
     font-family: var(--principal-font);
-    font-weight: 400;
-    font-size: 1.7em;
+    font-weight: 300;
+    font-size: 0.95em;
 }
-main#pageContato div#contato > div span{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 3%;
+main#pageEventos section#finalizados div#registros > div i{
+    margin: 16px 0;
 }
-main#pageContato div#contato > div span a{
-    color: black;
-    margin-left: 8px;
-    text-decoration: none;
-    font-family: var(--font-3);
-    font-size: 1.4em;
-}
-main#pageContato div#contato > div span i{
-    width: 24px;
-    height: 24px;
-    background-image: url(../image/whatsapp-icon.png);
-    background-size: cover;
-}
-main#pageContato div#contato > div span:last-child i{
-    background-image: url(../image/instagram-icon2.png);
-}
-main#pageContato div#contato > iframe{
-    margin-top: 10%;
-    width: 90%;
-    height: 45%;
-}
-main#pageContato figure > img{
-    width: 95%;
-    height: 100%;
-}
-/*------------for page produtos------------*/
+
+/*================ PAGE PRODUTOS =================*/
 main#pageProdutos{
     padding: 5vh 0;
 }
@@ -381,6 +398,70 @@ main#pageProdutos section#mensage-2{
 main#pageProdutos section#mensage-2 p{
     font-size: 1.8em;
     font-family: var(--principal-font);
+}
+
+/*================ PAGE CONTATO =================*/
+main#pageContato{
+    width: 75vw;
+    height: 90vh;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    background-color: transparent;
+}
+main#pageContato > div#contato, main#pageContato > figure{
+    width: 50%;
+    height: 100%;
+}
+main#pageContato div#contato > div{
+    width: 90%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--contatos-color);
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 8px 8px #ccc;
+}
+main#pageContato div#contato > div h2{
+    margin-bottom: 6%;
+    font-family: var(--principal-font);
+    font-weight: 400;
+    font-size: 1.7em;
+}
+main#pageContato div#contato > div span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 3%;
+}
+main#pageContato div#contato > div span a{
+    color: black;
+    margin-left: 8px;
+    text-decoration: none;
+    font-family: var(--font-3);
+    font-size: 1.4em;
+}
+main#pageContato div#contato > div span i{
+    width: 24px;
+    height: 24px;
+    background-image: url(../image/whatsapp-icon.png);
+    background-size: cover;
+}
+main#pageContato div#contato > div span:last-child i{
+    background-image: url(../image/instagram-icon2.png);
+}
+main#pageContato div#contato > iframe{
+    margin-top: 10%;
+    width: 90%;
+    height: 45%;
+}
+main#pageContato figure > img{
+    width: 95%;
+    height: 100%;
 }
 
 /*=============================== FOOTER STYLE ================================*/

@@ -29,9 +29,9 @@
         height: 100%;
         width: 100%;
     }
-    header nav ul a:nth-child(1), header nav ul a:nth-child(2), header nav ul a:nth-child(3){ /*removendo estilos*/
-        border-radius: 0px;
+    header nav ul a:not(a:first-child), header nav ul a:first-child{ 
         border: none;
+        border-radius: 0px;
     }
     header nav menu{  /*criado via js*/
         width: 42px;
@@ -47,9 +47,12 @@
         width: 90vw;
     }
     @keyframes slide-move{
-        0%{ transform: translateX(0); }
-        50%{ transform: translate(-90vw); }
-        100%{ transform: translateX(-180vw); }
+        0%{ transform: translateX(0); 
+        }
+        50%{ transform: translate(-90vw); 
+        }
+        100%{ transform: translateX(-180vw); 
+        }
     }
     main section#sobre{
         height: 100vh;
