@@ -8,7 +8,6 @@
     --main-color: #F5F5F5;
     --contatos-color:  rgb(252,240,188);
     --button-color: rgb(250,250,58);
-    --eventos-color: rgb(242,219,197);
     --box-color: rgb(255,255,255);
     --font-principal: 'Raleway', sans-serif;
     --font-2: 'Times New Roman', Times, serif;
@@ -274,7 +273,8 @@ main#pageEventos{
     flex-direction: column;
     align-items: center;
     box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
-    background-color: var(--eventos-color);
+    background-image: url(../image/molde.png);
+    background-size: cover;
 }
 #pageEventos section#finalizados div#registros > div *{ /*todos os textos*/
     font: 300 0.95em var(--font-principal);

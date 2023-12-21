@@ -13,6 +13,7 @@ function Menu(){
         } else{
             menu.style.rotate = '0deg'
             ul.style.display = 'none'
+            
         }
     })
 }
