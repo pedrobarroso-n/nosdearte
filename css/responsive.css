@@ -4,12 +4,21 @@
 
     header{
         height: 16vh;
+        width: 100%;
     }
-    header div#logo{
-        width: 50%;
+    header div#logo{  
+        width: 62%;
+    }
+    div#logo::before{   
+        content: 'Nós de Arte';
+        width: 20%;
+        color: white;
+        text-align: center;
+        font: italic 600 1.25em var(--font-2);
+        margin: auto;
     }
     header nav{
-        width: 50%;
+        width: 38%;
         margin: 0;
         align-items: center;
         justify-content: center;
@@ -85,7 +94,7 @@
         height: 70vh;
         max-height: 500px;
     }
-    main section#apoio div:nth-child(even){ /*remover efeitos*/
+    main section#apoio div:nth-child(even){ 
         flex-direction: column;
     }
     main section#apoio div p{
@@ -96,86 +105,75 @@
     main section#apoio div b{
         font-size: 1.2em;
     }
+
     /*-------------for page eventos-------------*/
     main#pageEventos{
         width: 90%;
         padding: 5vh 0;
     }
-    main#pageEventos section#disponiveis h1{
-        height: 15%;
-    }
-    main#pageEventos section#disponiveis h1, 
-    main#pageEventos section#finalizados h1{
+    #pageEventos section#disponiveis h1, 
+    #pageEventos section#finalizados h1{
         font-size: 2.5em;
+        height: 10vh;
     }
-    main#pageEventos section#disponiveis div{
-        grid-template-columns: 1fr;
-        grid-template-rows: 7fr 1fr;
+    #pageEventos section#disponiveis{
+        height: 60vh;
     }
-    main#pageEventos section#disponiveis div h2{
-        padding: 5%;
+    #pageEventos section#disponiveis div{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 7% 0;
     }
-    main#pageEventos section#disponiveis div img{
-        margin-top: 20%;
-        height: 100%;
+    #pageEventos section#finalizados{
+        margin-top: 15%;
     }
-    main#pageEventos section#finalizados div#registros > div{
+    #pageEventos section#finalizados div#registros > div{
         width: 80%;
-        height: 80%;
     }
+
     /*------------for page produtos-------------*/
     main#pageProdutos section#mensage{
         height: 60vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    main#pageProdutos section#mensage div h2{
+    #pageProdutos section#mensage div h2{
         font-size: 3em;
         margin: 6% 0;
     }
-    main#pageProdutos section#produtos h2{
+    #pageProdutos section#produtos h2{
         font-size: 1.4em;
         padding: 4%;
     }
-    main#pageProdutos section#mensage-2{
+    #pageProdutos section#mensage-2{
         flex-direction: column;
     }
-    main#pageProdutos section#mensage-2 img{
+    #pageProdutos section#mensage-2 img{
         width: 100%;
     }
+
 /*----------for page contato----------*/
     main#pageContato{
-        width: 90vw;
-        height: 100%;
-        margin: 10% auto;
-        flex-direction: column;
+        width: 85vw;
+        height: 70vh;
+        margin: 5vh auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
     }
-    main#pageContato > div#contato, main#pageContato > figure, main#pageContato figure > img{
+    #pageContato div, #pageContato figure{
         width: 100%;
         height: 100%;
     }
-    main#pageContato div#contato > div h2{
-        font-size: 1.4em;
+    #pageContato div h2{
+        font-size: 1.6em;
     }
-    main#pageContato div#contato > div span i{
-        height: 20px;
-        width: 20px;
+    #pageContato div span i{
+        height: 22px;
+        width: 22px;
     }
-    main#pageContato div#contato > div span a{
-        font-size: 1.1em;
-    }
-    main#pageContato div#contato > div, main#pageContato div#contato > iframe{
-        width: 100%;
-        height: 30vh;
-    }
-    main#pageContato figure{
-        width: 320px;
-        height: 320px;
-        margin: auto;
-        margin-top: 10%;
-    }
-    main#pageContato figure > img{
-        border-radius: 50%;
+    #pageContato div span a{
+        font-size: 1.3em;
     }
 
     footer{
@@ -186,55 +184,5 @@
     footer div#informes{
         font-size: 0.8em;
         text-align: center;
-    }
-}
-
-/*========================= TABLET SCREEN ===========================*/
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    
-    /*----------for page index--------*/
-    main section#sobre{
-        height: 90vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    main section#apoio div{
-        height: 20vh;
-    }
-    main section#apoio div p b{
-        margin-bottom: 5%;
-    }
-    main section#apoio div p{
-        font-size: 0.9em;
-        line-height: normal;
-    }
-    /*--------for page contato--------*/
-    main#pageContato{
-        width: 90vw;
-        height: 100%;
-        margin: 10% auto;
-        flex-direction: column;
-    }
-    main#pageContato > div#contato, main#pageContato > figure, main#pageContato figure > img{
-        width: 100%;
-        height: 100%;
-    }
-    main#pageContato div#contato > div, main#pageContato div#contato > iframe{
-        width: 100%;
-        height: 30vh;
-    }
-    main#pageContato figure{
-        width: 95%;
-        height: 45vh;
-        margin: auto;
-        margin-top: 10%;
-    }
-
-    footer{
-        height: 14vh;
-    }
-    footer div#informes{
-        width: 80%;
     }
 }
