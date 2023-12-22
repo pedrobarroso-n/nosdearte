@@ -1,6 +1,7 @@
 <h1 align="center"> Nós de Arte </h1>
-
-<img src="" width="100%">
+<img src="./image/Banner_github.png" width="100%">
+<br>
+<br>
 <p>Este website é baseado em um projeto anterior, feito atravéis da plataforma <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjjpNznr6ODAxXYppUCHUNXA7wQFnoECAYQAQ&url=https%3A%2F%2Fpt.wix.com%2F&usg=AOvVaw02HBUd4W0y6MSj0RppCBXq&opi=89978449">wix.com</a> para um projeto de exibição durante um evento da faculdade, agora sendo feito a "mão" com códigos. Um breve resumo para contexto, a Nós de Arte é uma pequeno conjunto de artesãs de minha cidade, originalmente o projeto visava tornar o site um meio onde as mesmas poderiam apresentar e vender seus produtos, dentre outras ações realizadas pela equipe que seriam divulgadas por lá.</p>
 
 <h3>Tecnologias usadas:</h3>
@@ -21,4 +22,8 @@
 </ul>
 
 <h3>Veja o resultado aqui:</h3>
-<a style="background: black;color: white;padding: 5px 30px;" href="pedrobarroso-n.github.io/nosdearte/">ACESSAR</a>
+<a href="https://pedrobarroso-n.github.io/nosdearte/" style="background: black;color: white;padding: 5px 30px;">ACESSAR</a>
+
+<br>
+<br>
+<a href="https://valfredocosta.wixsite.com/nosdearte" style="text-decoration: underline;">* acessar projeto original</a>

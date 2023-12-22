@@ -1,4 +1,4 @@
-document.onload(Menu())
+document.addEventListener('resize', Menu())
 
 function Menu(){
     const nav = document.querySelector('nav')

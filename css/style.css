@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 :root{
-    --header-color: #C2A586;
+    --header-color: linear-gradient(to top,#9b7e5f, #af957c);
     --footer-color: rgb(242,219,197);
     --ul-color: #FFFFFF;
     --select: #E3C8AD; 
@@ -29,10 +29,11 @@ header{
     max-height: 200px;
     display: flex;
     flex-direction: row;
-    background-color: var(--header-color);
+    background-image: var(--header-color);
+    box-shadow: inset 0px -4px 4px rgba(0, 0, 0, 0.22);
 }
 header div#logo{
-    width: 28%;
+    width: 25%;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -41,13 +42,13 @@ header div#logo > img{
     height: 80%;
 }
 header nav{
-    width: 72%;
+    width: 75%;
     display: flex;
     align-items: center;
     margin-left: 5%;
 }
 header nav ul{
-    width: 75%;
+    width: 80%;
     height: 28%;
     display: flex;
     flex-direction: row;
