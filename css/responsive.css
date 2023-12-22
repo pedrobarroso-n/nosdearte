@@ -1,4 +1,4 @@
-/*==================== MOBILE SCREEN ====================*/
+/*============================ MOBILE ============================*/
 
 @media screen and (max-width: 767px){
 
@@ -63,7 +63,7 @@
         position: absolute;
     }
     
-    /*-----------for page index----------*/
+    /*---------------------for page index---------------------*/
     main div#slides, main div#slides span > img{
         width: 90vw;
     }
@@ -118,7 +118,7 @@
         font-size: 1.2em;
     }
 
-    /*-------------for page eventos-------------*/
+    /*---------------------for page eventos---------------------*/
     main#pageEventos{
         width: 90%;
         padding: 5vh 0;
@@ -144,7 +144,7 @@
         width: 80%;
     }
 
-    /*------------for page produtos-------------*/
+    /*---------------------for page produtos----------------------*/
     main#pageProdutos section#mensage{
         height: 60vh;
         grid-template-columns: 1fr;
@@ -165,7 +165,7 @@
         width: 100%;
     }
 
-/*----------for page contato----------*/
+    /*---------------------for page contato---------------------*/
     main#pageContato{
         width: 85vw;
         height: 70vh;
@@ -196,5 +196,105 @@
     footer div#informes{
         font-size: 0.8em;
         text-align: center;
+    }
+}
+
+/*========================== TABLETS ==================================*/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    
+    header{
+        height: 16vh;
+    }
+    header div#logo{
+        width: 34%;
+    }
+    header nav{
+        width: 66%;
+    }
+    header nav ul{
+        width: 80%;
+    }
+
+    /*-----------------------page index-------------------------*/
+    main div#slides{
+        width: 80vw;
+    }
+    main div#slides span > img{
+        width: 80vw;
+    }
+    @keyframes slide-move{
+        0%{ transform: translateX(0);
+        }
+        50%{ transform: translate(-80vw);
+        }
+        100%{ transform: translateX(-160vw);
+        }
+    }
+    main section#sobre{
+        width: 80vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 64% 36%;
+    }
+    main section#apoio{
+        width: 80vw;
+    }
+    main section#apoio div{
+        height: 20vh;
+        width: 100%;
+        margin-top: 10%;
+    }
+    main section#apoio div img{
+        width: 50%;
+    }
+    main section#apoio div p{
+        font-size: 0.95em;
+        line-height: normal;
+    }
+    main section#apoio div p b{
+        font-size: 1.25em;
+    }
+
+    /*--------------------page eventos---------------------*/
+    main#pageEventos{
+        padding: 5vh 0;
+    }
+    #pageEventos section#disponiveis{
+        height: 40vh;
+    }
+    #pageEventos section#disponiveis h1, 
+    #pageEventos section#finalizados h1{
+        height: 10vh;
+    }
+
+    /*------------------page produtos----------------------*/
+    #pageProdutos section#mensage{
+        height: 22vh;
+    }
+    #pageProdutos section#produtos > div#local{
+        gap: 5vh 0;
+    }
+    #pageProdutos section#mensage-2 p{
+        font-size: 1.3em;
+    }
+    #pageProdutos section#mensage-2 img{
+        width: 60%;
+    }
+
+    /*---------------page contato-------------------------*/
+    main#pageContato{
+        height: 68vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    footer{
+        height: 12vh;
+    }
+    footer div#informes{
+        width: 80vw;
+    }
+    footer div#midias{
+        width: 20vw;
     }
 }

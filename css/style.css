@@ -6,6 +6,7 @@
     --ul-color: #FFFFFF;
     --select: #E3C8AD; 
     --main-color: #F5F5F5;
+    --eventos-color: #f2dbc5;
     --contatos-color:  rgb(252,240,188);
     --button-color: rgb(250,250,58);
     --box-color: rgb(255,255,255);
@@ -25,6 +26,7 @@
 header{
     width: 100%;
     height: 25vh;
+    max-height: 200px;
     display: flex;
     flex-direction: row;
     background-color: var(--header-color);
@@ -226,7 +228,7 @@ main#pageEventos{
 }
 #pageEventos section#disponiveis div{
     height: 85%;
-    width: 80%;
+    width: 85%; 
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -273,10 +275,9 @@ main#pageEventos{
     flex-direction: column;
     align-items: center;
     box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
-    background-image: url(../image/molde.png);
-    background-size: cover;
+    background-color: var(--eventos-color);
 }
-#pageEventos section#finalizados div#registros > div *{ /*todos os textos*/
+#pageEventos section#finalizados div#registros > div *{ 
     font: 300 0.95em var(--font-principal);
 }
 #pageEventos section#finalizados div#registros > div i{
@@ -439,6 +440,7 @@ main#pageContato{
 footer{
     width: 100%;
     height: 18vh;
+    max-height: 200px;
     display: flex;
     flex-direction: row;
     background-color: var(--footer-color);

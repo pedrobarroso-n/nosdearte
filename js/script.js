@@ -1,4 +1,4 @@
-if (document.body.clientWidth < 768){ Menu() }
+document.onload(Menu())
 
 function Menu(){
     const nav = document.querySelector('nav')
