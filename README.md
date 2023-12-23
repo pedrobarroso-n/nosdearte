@@ -22,9 +22,11 @@
 </ul>
 
 <h3>Colaboradores:</h3>
+<ul>
 <li><a href="https://www.linkedin.com/in/valfredo-silva-593701233?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3ByRBp%2FDOVSzCLi5v4whOOlA%3D%3D">Valfredo Silva</a></li>
 <li><a href="https://www.linkedin.com/in/paulo-braga-5b225b243?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNipNelL1S8CY2MBomDoBiA%3D%3D">Paulo Braga</a></li>
 <li><a href="https://www.linkedin.com/in/isaacdesigneer?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BrTpPWlUbReyTnr48ZuCQ%2BQ%3D%3D">Francisco Isaac</a></li>
+</ul>
 
 <h3>Veja o resultado aqui:</h3>
 <a href="https://pedrobarroso-n.github.io/nosdearte/" style="background: lightblue;color: black;padding: 5px 30px;">ACESSAR</a>
