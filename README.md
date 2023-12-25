@@ -14,14 +14,14 @@
 
 <h3>Também usados:</h3>
 <ul>
-<li>Canva (imagens personalizadas)</li>
-<li>Pexels (imagens decorativas)</li>
+<li>Canva (imagens)</li>
+<li>Pexels (imagens)</li>
 <li>GoogleFonts (fontes)</li>
 <li>Flaticon (icones)</li>
 <li>GitHubPages (hospedagem)</li>
 </ul>
 
-<h3>Colaboradores:</h3>
+<h3>Demais Colaboradores:</h3>
 <ul>
 <li><a href="https://www.linkedin.com/in/valfredo-silva-593701233?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3ByRBp%2FDOVSzCLi5v4whOOlA%3D%3D">Valfredo Silva</a></li>
 <li><a href="https://www.linkedin.com/in/paulo-braga-5b225b243?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BNipNelL1S8CY2MBomDoBiA%3D%3D">Paulo Braga</a></li>
@@ -29,9 +29,9 @@
 </ul>
 
 <h3>Veja o resultado aqui:</h3>
-<a href="https://pedrobarroso-n.github.io/nosdearte/" style="background: lightblue;color: black;padding: 5px 30px;">ACESSAR</a>
+<a href="https://pedrobarroso-n.github.io/nosdearte/" style="padding: 5px 30px;background: blue;color: black;">ACESSAR</a>
 
 <br>
 <br>
 <br>
-<a href="https://valfredocosta.wixsite.com/nosdearte" style="text-decoration: underline;">* acessar projeto original</a>
+<a href="https://valfredocosta.wixsite.com/nosdearte" style="text-decoration: underline;">* clique para ver o projeto original</a>
